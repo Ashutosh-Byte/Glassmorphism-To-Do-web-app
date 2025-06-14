@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism To-Do app </TO-DO></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="to-do-app">
+        <h1>To do App</h1>
+        <div class="stat-container">
+          <div class="details">
+            <h3>Keep it Up</h3>
+            <div id="progressbar">
+              <div id="progress"></div>
+            </div>
+          </div>
+          <div class="statnumber">
+            <p id="number">0/0</p>
+          </div>
+        </div>
+        <form class="input-area">
+          <input type="text" placeholder="Add a new Task.." id="task-input" />
+          <button type="submit" id="add-task-btn">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+        <div class="to-do-container">
+          <ul id="task-list"></ul>
+          <div class="empty-image-container">
+            <img src="Empty img.png" alt="empty image" class="empty-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  </body>
+</html>
